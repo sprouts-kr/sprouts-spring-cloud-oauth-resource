@@ -23,11 +23,12 @@ public class BaseEntity {
     @Column(nullable = false, updatable = false)
     private LocalDateTime createdOn;
     @CreatedBy
-    @Column(nullable = false, updatable = false, length = 36)
+    @Column(updatable = false, length = 36)
     @Type(type = "uuid-char")
     private UUID createdBy;
 
     @LastModifiedDate
+    @Column(nullable = false)
     private LocalDateTime lastModifiedOn;
     @LastModifiedBy
     @Column(length = 36)
