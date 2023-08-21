@@ -141,9 +141,6 @@ sprouts:
       permit-all.patterns:
         - /actuator/**
         - /h2-console/**
-    web:
-      ignore.patterns:
-        - /h2-console/**
     credential:
       header:
         provider-header-name: "Authorization-Provider"
