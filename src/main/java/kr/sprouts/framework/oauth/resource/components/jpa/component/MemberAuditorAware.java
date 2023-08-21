@@ -1,4 +1,4 @@
-package kr.sprouts.framework.oauth.resource.components.jpa.componenet;
+package kr.sprouts.framework.oauth.resource.components.jpa.component;
 
 import kr.sprouts.framework.oauth.resource.components.utility.PatternMatcher;
 import org.springframework.data.domain.AuditorAware;
