@@ -53,12 +53,6 @@ spring:
         legacy_limit_handler: true
         jdbc:
           time_zone: Asia/Seoul
-#  sql:
-#    init:
-#      mode: always
-#      encoding: UTF-8
-#      data-locations: >
-#        classpath:/data/h2/samples.sql
 
 eureka:
   instance:
