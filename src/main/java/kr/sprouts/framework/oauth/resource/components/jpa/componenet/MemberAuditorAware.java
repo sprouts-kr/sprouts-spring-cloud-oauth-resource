@@ -27,7 +27,7 @@ public class MemberAuditorAware implements AuditorAware<UUID> {
             }
         });
 
-        return (username.get() != null && PatternMatcher.Uuid(username.get())) ?
+        return (username.get() != null && PatternMatcher.uuid(username.get())) ?
                 Optional.of(UUID.fromString(username.get())) : Optional.empty();
     }
 }
