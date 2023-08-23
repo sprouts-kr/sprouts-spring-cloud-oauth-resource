@@ -125,14 +125,13 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- sprouts.kr -->
         <!-- logstash appender -->
         <dependency>
             <groupId>kr.sprouts.framework.autoconfigure</groupId>
             <artifactId>sprouts-logstash-appender-spring-boot-starter</artifactId>
             <version>${sprouts.logstash.appender.version}</version>
         </dependency>
-        <!-- web api response -->
+        <!-- web response -->
         <dependency>
             <groupId>kr.sprouts.framework.autoconfigure</groupId>
             <artifactId>sprouts-web-response-spring-boot-starter</artifactId>
