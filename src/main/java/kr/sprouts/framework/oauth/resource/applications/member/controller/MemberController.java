@@ -1,8 +1,8 @@
 package kr.sprouts.framework.oauth.resource.applications.member.controller;
 
-import kr.sprouts.autoconfigure.response.body.link.LinkBuilder;
-import kr.sprouts.autoconfigure.response.entity.StructuredResponse;
-import kr.sprouts.autoconfigure.response.entity.StructuredResponseEntity;
+import kr.sprouts.framework.autoconfigure.web.response.components.body.link.LinkBuilder;
+import kr.sprouts.framework.autoconfigure.web.response.components.entity.StructuredResponse;
+import kr.sprouts.framework.autoconfigure.web.response.components.entity.StructuredResponseEntity;
 import kr.sprouts.framework.oauth.resource.applications.member.dto.proxy.MemberProxy;
 import kr.sprouts.framework.oauth.resource.applications.member.dto.request.MemberCreateRequest;
 import kr.sprouts.framework.oauth.resource.applications.member.dto.request.MemberPasswordChangeRequest;

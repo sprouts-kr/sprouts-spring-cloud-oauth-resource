@@ -1,6 +1,6 @@
 package kr.sprouts.framework.oauth.resource.applications.member.exception.rollback;
 
-import kr.sprouts.autoconfigure.response.base.BaseRollbackException;
+import kr.sprouts.framework.autoconfigure.web.response.components.base.BaseRollbackException;
 import org.springframework.http.HttpStatus;
 
 public class IllegalMemberStatusRollbackException extends BaseRollbackException {

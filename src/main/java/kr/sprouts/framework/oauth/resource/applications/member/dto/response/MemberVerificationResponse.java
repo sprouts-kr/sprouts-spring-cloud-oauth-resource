@@ -1,7 +1,7 @@
 package kr.sprouts.framework.oauth.resource.applications.member.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import kr.sprouts.autoconfigure.response.base.BaseResponse;
+import kr.sprouts.framework.autoconfigure.web.response.components.base.BaseResponse;
 import kr.sprouts.framework.oauth.resource.applications.member.dto.proxy.MemberProxy;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;

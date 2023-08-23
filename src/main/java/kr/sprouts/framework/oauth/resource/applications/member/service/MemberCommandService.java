@@ -1,6 +1,6 @@
 package kr.sprouts.framework.oauth.resource.applications.member.service;
 
-import kr.sprouts.autoconfigure.response.base.BaseCommitException;
+import kr.sprouts.framework.autoconfigure.web.response.components.base.BaseCommitException;
 import kr.sprouts.framework.oauth.resource.applications.member.dto.proxy.MemberProxy;
 import kr.sprouts.framework.oauth.resource.applications.member.entity.Member;
 import kr.sprouts.framework.oauth.resource.applications.member.enumeration.MemberStatus;

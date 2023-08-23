@@ -1,6 +1,6 @@
 package kr.sprouts.framework.oauth.resource.applications.member.exception.commit;
 
-import kr.sprouts.autoconfigure.response.base.BaseCommitException;
+import kr.sprouts.framework.autoconfigure.web.response.components.base.BaseCommitException;
 import org.springframework.http.HttpStatus;
 
 public class NotAuthorizedCommitException extends BaseCommitException {
