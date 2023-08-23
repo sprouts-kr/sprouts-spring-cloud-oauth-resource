@@ -3,7 +3,6 @@ package kr.sprouts.framework.service.oauth.resource.applications.member.dto.resp
 import com.fasterxml.jackson.annotation.JsonInclude;
 import kr.sprouts.framework.autoconfigure.web.response.components.base.BaseResponse;
 import kr.sprouts.framework.service.oauth.resource.applications.member.dto.proxy.MemberProxy;
-import kr.sprouts.framework.service.oauth.resource.applications.member.enumeration.MemberStatus;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -20,7 +19,7 @@ public class MemberResponse extends BaseResponse {
     private String name;
     private Boolean passwordExpired;
     private String passwordExpireDate;
-    private MemberStatus status;
+    private String status;
     private String description;
 
     private LocalDateTime createdOn;
@@ -35,7 +34,7 @@ public class MemberResponse extends BaseResponse {
                 proxy.getName(),
                 proxy.getPasswordExpired(),
                 proxy.getPasswordExpireDate(),
-                proxy.getStatus(),
+                proxy.getStatus().toString(),
                 proxy.getDescription(),
                 proxy.getCreatedOn(),
                 proxy.getCreatedBy(),
