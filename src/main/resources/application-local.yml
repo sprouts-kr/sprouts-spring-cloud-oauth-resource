@@ -20,7 +20,7 @@ spring:
     base-url: http://zipkin.sprouts.kr/
   cloud:
     discovery:
-      enabled: true
+      enabled: false
   h2:
     console:
       enabled: true
@@ -62,7 +62,7 @@ eureka:
      lease-expiration-duration-in-seconds: 10
   client:
     client:
-      enabled: true
+      enabled: false
     healthcheck:
       enabled: true
     register-with-eureka: true
@@ -137,9 +137,9 @@ sprouts:
         - /h2-console/**
     credential:
       header:
-        provider-header-name: "Authorization-Provider"
-        consumer-header-name: "Authorization-Consumer"
-        value-header-name: "Authorization"
+        name: "Authorization"
+        prefix: "Bearer"
+        codec: "BASE64_URL"
       consumers:
         - id: "bcb7f865-319b-4668-9fca-4ea4440822e2"
           name: "Consumer #1"
