@@ -141,7 +141,7 @@ sprouts:
         prefix: "Bearer"
         codec: "BASE64_URL"
       consumers:
-        - id: 00000071-480b-4617-9de2-da82b0d4a20e
+        - id: "00000071-480b-4617-9de2-da82b0d4a20e"
           name: "Default consumer"
           type: "BEARER_TOKEN"
           algorithm: "HS256"
@@ -150,7 +150,7 @@ sprouts:
           validProviders:
             - id: "00000033-6ff9-4630-bd13-82f27a962fd3"
               name: "Default provider"
-        - id: ffffff38-5052-433a-a14d-0fe45813b7c5
+        - id: "ffffff38-5052-433a-a14d-0fe45813b7c5"
           name: "ApiKey consumer"
           type: "API_KEY"
           algorithm: "AES256"
