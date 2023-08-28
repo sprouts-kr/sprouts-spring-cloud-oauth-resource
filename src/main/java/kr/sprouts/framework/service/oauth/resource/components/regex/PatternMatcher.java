@@ -1,4 +1,4 @@
-package kr.sprouts.framework.service.oauth.resource.components.utility;
+package kr.sprouts.framework.service.oauth.resource.components.regex;
 
 import java.util.regex.Pattern;
 
