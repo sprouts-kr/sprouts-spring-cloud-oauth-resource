@@ -137,25 +137,25 @@ sprouts:
         - /h2-console/**
     credential:
       header:
-        name: "Authorization"
-        prefix: "Bearer"
-        codec: "BASE64_URL"
+        name: Authorization
+        prefix: Bearer
+        codec: BASE64_URL
       consumers:
-        - id: "00000071-480b-4617-9de2-da82b0d4a20e"
-          name: "Default consumer"
-          type: "BEARER_TOKEN"
-          algorithm: "HS256"
-          codec: "BASE64_URL"
-          encodedSecret: "9rBJxUbKuODsQmu1b5oUw5dxc8YcgGh5RnqdLV3nsRwm21UJVrrziYq1a6MM5JLm"
+        - id: 000000fc-1934-42af-90f5-3004cd40257e
+          name: AccessTokenConsumer
+          type: BEARER_TOKEN
+          algorithm: HS512
+          codec: BASE64_URL
+          encodedSecret: gj9OkDY_BRelaDXsOg2bDOz4EJR7SXvcFCFspCTb4GKdGx7PxVqWidIrY_YtBJsEcndGROc-RUww2twUwTR6Lg==
           validProviders:
-            - id: "00000033-6ff9-4630-bd13-82f27a962fd3"
-              name: "Default provider"
-        - id: "ffffff38-5052-433a-a14d-0fe45813b7c5"
-          name: "ApiKey consumer"
-          type: "API_KEY"
-          algorithm: "AES256"
-          codec: "BASE64_URL"
-          encodedSecret: "VhIW0Qwfqwm9KGVk6dBfyD0iBlfJSOzCofPdoxUqABg="
+            - id: 00000083-3bae-4b13-b033-ebd8e779a1b0
+              name: AccessTokenProvider
+        - id: ffffff38-5052-433a-a14d-0fe45813b7c5
+          name: ApiKeyConsumer
+          type: API_KEY
+          algorithm: AES256
+          codec: BASE64_URL
+          encodedSecret: VhIW0Qwfqwm9KGVk6dBfyD0iBlfJSOzCofPdoxUqABg=
           validProviders:
-            - id: "ffffff32-4858-43c8-b386-8ae748b0e394"
-              name: "ApiKey provider"
+            - id: ffffff32-4858-43c8-b386-8ae748b0e394
+              name: ApiKeyProvider
