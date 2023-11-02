@@ -1,5 +1,13 @@
 package kr.sprouts.framework.service.oauth.resource.applications.local.member.entity;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.persistence.UniqueConstraint;
 import kr.sprouts.framework.service.oauth.resource.applications.local.member.enumeration.MemberStatus;
 import kr.sprouts.framework.service.oauth.resource.applications.local.member.exception.rollback.IllegalMemberStatusRollbackException;
 import kr.sprouts.framework.service.oauth.resource.components.jpa.entity.BaseEntity;
@@ -17,14 +25,6 @@ import org.hibernate.annotations.Type;
 import org.hibernate.annotations.Where;
 import org.hibernate.envers.Audited;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.UniqueConstraint;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.UUID;
