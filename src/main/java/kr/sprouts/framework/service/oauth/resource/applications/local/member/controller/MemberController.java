@@ -25,7 +25,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.net.URI;
 import java.util.Optional;
 import java.util.UUID;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping(value = MemberController.REQUEST_PATH)
@@ -45,7 +44,7 @@ public class MemberController {
         return StructuredResponse.succeeded(
                 memberQueryService.findAll().stream()
                         .map(MemberResponse::fromProxy)
-                        .collect(Collectors.toList())
+                        .toList()
         );
     }
 

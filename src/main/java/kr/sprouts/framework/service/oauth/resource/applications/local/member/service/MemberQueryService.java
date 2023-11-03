@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 import java.util.concurrent.atomic.AtomicReference;
-import java.util.stream.Collectors;
 
 @Service
 @Transactional(readOnly = true)
@@ -29,7 +28,7 @@ public class MemberQueryService {
     public List<MemberProxy> findAll() {
         return memberQueryRepository.findAll().stream()
                 .map(MemberProxy::fromEntity)
-                .collect(Collectors.toList());
+                .toList();
     }
 
     public MemberProxy findById(UUID id) {
