@@ -45,7 +45,7 @@ import java.util.UUID;
 public class Member extends BaseEntity {
     @Id
     @GeneratedValue(generator = "uuid2")
-    @GenericGenerator(name = "uuid2", strategy = "uuid2")
+    @GenericGenerator(name = "UUID2", type = org.hibernate.id.uuid.UuidGenerator.class)
     @Column(nullable = false, length = 36)
     @JdbcTypeCode(SqlTypes.CHAR)
     private UUID id;
